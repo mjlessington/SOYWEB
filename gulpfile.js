@@ -30,7 +30,6 @@ function browserSync(done) {
     server: {
       baseDir: "./"
     },
-    proxy: "localhost:3000",
     port: 8080
   });
   done();
