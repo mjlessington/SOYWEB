@@ -29,8 +29,8 @@ function browserSync(done) {
   browsersync.init({
     server: {
       baseDir: "./"
-    },
-    port: 8080
+    }
+
   });
   done();
 }
