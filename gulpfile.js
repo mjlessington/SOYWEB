@@ -25,16 +25,16 @@ const banner = ['/*!\n',
 ].join('');
 
 // BrowserSync
-gulp.task('browser-sync', function() {
-  browserSync.init({
+function browserSync(done) {
+  browsersync.init({
     server: {
       baseDir: "./"
     },
     port: 3000,
     open: false
   });
-  
-});
+  done();
+}
 
 // BrowserSync reload
 function browserSyncReload(done) {
