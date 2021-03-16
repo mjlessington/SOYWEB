@@ -4,8 +4,8 @@
     "version": "5.0.11",
     "scripts": {
         "start": "node_modules/.bin/gulp watch",
-        "test": "echo \"Error: no test specified\" && exit 1",
-        "build": "node_modules/.bin/gulp watch"
+        "test": "echo \"Error: no test specified\" && exit 1"
+        
     },
     "description": "A casual HTML website theme for businesses built with Bootstrap",
     "keywords": [
