@@ -27,11 +27,11 @@ const banner = ['/*!\n',
 // BrowserSync
 function browserSync(done) {
   browsersync.init({
-    // server: {
-    //   baseDir: "./"
-    // },
-    proxy: "localhost:3000",
-    port: 8080
+    server: {
+      baseDir: "./"
+    },
+    port: 8080,
+    open: false
   });
   done();
 }
