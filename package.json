@@ -3,7 +3,7 @@
     "name": "startbootstrap-business-casual",
     "version": "5.0.11",
     "scripts": {
-        "start": "node_modules/.bin/gulp watch",
+        "start": "node_modules/.bin/gulp watch"
        
     },
     "description": "A casual HTML website theme for businesses built with Bootstrap",
@@ -32,7 +32,7 @@
     "dependencies": {
         "bootstrap": "4.5.3",
         "build": "^0.1.4",
-        "jquery": "3.5.1",
+        "jquery": "3.5.1"
        
     },
     "devDependencies": {
