@@ -26,7 +26,7 @@ const banner = ['/*!\n',
 
 // BrowserSync
 gulp.task('browser-sync', function() {
-  browsersync.init({
+  browserSync.init({
     server: {
       baseDir: "./"
     },
@@ -34,7 +34,7 @@ gulp.task('browser-sync', function() {
     open: false
   });
   
-}
+});
 
 // BrowserSync reload
 function browserSyncReload(done) {
