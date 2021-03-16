@@ -2,7 +2,7 @@
 
 // Load plugins
 const autoprefixer = require("gulp-autoprefixer");
-const browsersync = require("browser-sync").create();
+const browserSync = require("browser-sync").create();
 const cleanCSS = require("gulp-clean-css");
 const del = require("del");
 const gulp = require("gulp");
@@ -25,7 +25,7 @@ const banner = ['/*!\n',
 ].join('');
 
 // BrowserSync
-function browserSync(done) {
+gulp.task('browser-sync', function() {
   browsersync.init({
     server: {
       baseDir: "./"
@@ -33,7 +33,7 @@ function browserSync(done) {
     port: 3000,
     open: false
   });
-  done();
+  
 }
 
 // BrowserSync reload
