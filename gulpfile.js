@@ -96,6 +96,13 @@ const vendor = gulp.series(clean, modules);
 const build = gulp.series(vendor, css);
 const watch = gulp.series(build, gulp.parallel(watchFiles, browserSync));
 
+app.set('port', process.env.OPENSHIFT_NODEJS_PORT || process.env.PORT || 8080);
+app.set('ip', process.env.OPENSHIFT_NODEJS_IP || '127.0.0.1');
+
+http.createServer(app).listen(app.get('port') ,app.get('ip'), function(){
+  console.log("yep", app.get('ip'), app.get('port'));
+});
+
 // Export tasks
 exports.css = css;
 exports.clean = clean;
