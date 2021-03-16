@@ -2,7 +2,7 @@
 
 // Load plugins
 const autoprefixer = require("gulp-autoprefixer");
-const browsers0+ync = require("browser-sync").create();
+const browsersync = require("browser-sync").create();
 const cleanCSS = require("gulp-clean-css");
 const del = require("del");
 const gulp = require("gulp");
